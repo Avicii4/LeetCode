@@ -1,4 +1,4 @@
-# Remove Duplicates from Sorted Array (Easy)
+# Remove Duplicates from Sorted Array
 
 链接：[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/description/)
 
