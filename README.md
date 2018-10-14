@@ -4,11 +4,14 @@ My accepted Java [LeetCode](https://leetcode-cn.com/) solutions with Chinese ana
 
 Updating... :blush:
 
-## Directory
+### Directory
 
-### Array
+#### Array
 
-* [Remove Duplicates from Sorted Array](https://github.com/Avicii4/LeetCode/tree/master/problems/Array/removeDuplicates) 
+* [Remove Duplicates from Sorted Array](problems/Array/removeDuplicates)
 
-* [Best Time to Buy and Sell Stock II](https://github.com/Avicii4/LeetCode/tree/master/problems/Array/maxProfit)
+* [Best Time to Buy and Sell Stock II](problems/Array/maxProfit)
+
+* [Rotate Array](problems/Array/rotate)
+* [Contains Duplicate](problems/Array/containsDuplicate)
 
