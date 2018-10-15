@@ -1,5 +1,5 @@
 /**
- * Created by Harry Chou at 2018/11/13 
+ * Created by Harry Chou at 2018/11/13.
  * Description: Given an array of integers,find if the array contains any duplicates.
  */
 public class containsDuplicate {

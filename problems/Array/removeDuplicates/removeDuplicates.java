@@ -1,5 +1,5 @@
 /**
- * Created by Harry Chou at 2018/10/11
+ * Created by Harry Chou at 2018/10/11.
  * Description: Given a sorted array nums, remove the duplicates in-place such
  * that each element appear only once and return the new length.
  */

@@ -1,6 +1,7 @@
 /**
- * Created by Harry Chou at 2018/10/13 Description: Given an array, rotate the
- * array to the right by k steps, where k is non-negative.
+ * Created by Harry Chou at 2018/10/13. 
+ * Description: Given an array, rotate the array to the right by k steps, where
+ * k is non-negative.
  */
 public class rotate {
     public void Solution_1(int[] nums, int k) {
@@ -20,5 +21,5 @@ public class rotate {
         for (int i = 0; i < nums.length; i++)
             nums[(i + k) % nums.length] = result[i];
     }
-    
+
 }
