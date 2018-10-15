@@ -13,3 +13,6 @@ Updating... :blush:
 * [Rotate Array](problems/Array/rotate)
 * [Contains Duplicate](problems/Array/containsDuplicate)
 
+* [Single Number](problems/Array/singleNumber)
+* [Intersection of Two Arrays II](problems/Array/intersect)
+
