@@ -16,3 +16,5 @@ Updating... :blush:
 * [Single Number](problems/Array/singleNumber)
 * [Intersection of Two Arrays II](problems/Array/intersect)
 
+* [Plus One](problems/Array/plusOne)
+
