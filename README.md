@@ -15,4 +15,9 @@ Updating... :blush:
 * [Single Number](problems/Array/singleNumber)
 * [Intersection of Two Arrays II](problems/Array/intersect)
 * [Plus One](problems/Array/plusOne)
+* [Move Zeroes](problems/Array/moveZeroes)
+* [Two Sum](problems/Array/twoSum)
 
+#### String
+
+* [Reverse String](problems/String/reverseString)
