@@ -3,7 +3,7 @@
  * Description: Given two arrays, write a function to compute their
  * intersection.
  */
-public class intersect {
+public class Intersect {
     public int[] findIntersect(int[] nums1, int[] nums2) {
         ArrayList<Integer> result = new ArrayList<>();
         ArrayList<Integer> nums2toList = new ArrayList<>();

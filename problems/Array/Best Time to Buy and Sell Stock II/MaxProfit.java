@@ -5,7 +5,7 @@
  * may complete as many transactions as you like (i.e., buy one and sell one
  * share of the stock multiple times).
  */
-public class maxProfit {
+public class MaxProfit {
     public int calc(int[] prices) {
         int sum = 0;
         for (int i = 0; i < prices.length - 1; i++) {

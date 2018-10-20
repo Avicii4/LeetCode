@@ -6,7 +6,7 @@
  * contain a single digit.You may assume the integer does not contain any
  * leading zero, except the number 0 itself.
  */
-public class plusOne {
+public class PlusOne {
     public int[] plus(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {
             if (digits[i] < 9) {

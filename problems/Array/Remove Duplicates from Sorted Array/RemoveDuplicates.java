@@ -3,7 +3,7 @@
  * Description: Given a sorted array nums, remove the duplicates in-place such
  * that each element appear only once and return the new length.
  */
-public class removeDuplicates {
+public class RemoveDuplicates {
     public int remove(int[] nums) {
         int flag = 0;
         if (nums.length == 0)

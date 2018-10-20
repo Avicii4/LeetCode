@@ -3,7 +3,7 @@
  * Description: Given an array, rotate the array to the right by k steps, where
  * k is non-negative.
  */
-public class rotate {
+public class Rotate {
     public void Solution_1(int[] nums, int k) {
         // space complexity O(1)
         int mark = 0; // move the last element to the first place

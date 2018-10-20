@@ -3,7 +3,7 @@
  * Description: Given an array of integers, return indices of the two numbers
  * such that they add up to a specific target.
  */
-public class twoSum {
+public class TwoSum {
     public int[] findTwoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++)

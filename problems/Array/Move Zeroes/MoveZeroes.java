@@ -3,7 +3,7 @@
  * Description: Given an array nums, write a function to move all 0's to the end
  * of it while maintaining the relative order of the non-zero elements.
  */
-public class moveZeroes {
+public class MoveZeroes {
     public void move(int[] nums) {
         int zeroCount = 0;
         int k = 0;

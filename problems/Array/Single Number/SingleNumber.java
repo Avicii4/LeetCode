@@ -3,7 +3,7 @@
  * Description: Given a non-empty array of integers, every element appears twice
  * except for one. Find that single one.
  */
-public class singleNumber {
+public class SingleNumber {
     public int findSingleNumber(int[] nums) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i++) {
