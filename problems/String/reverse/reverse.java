@@ -3,7 +3,7 @@
  * Description: Given a 32-bit signed integer, reverse digits of an integer. And
  * returns 0 when the reversed integer overflows.
  */
-public class reverse {
+public class Reverse {
     public int reverseStr(int x) {
         int result = 0;
         while (x != 0) {
