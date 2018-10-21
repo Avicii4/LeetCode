@@ -18,6 +18,7 @@ Updating... :blush:
 * [Move Zeroes](problems/Array/MoveZeroes)
 * [Two Sum](problems/Array/TwoSum)
 * [Valid Sudoku](problems/Array/ValidSudoku)
+* [Rotate Image](problems/Array/RotateImage)
 
 #### String
 
