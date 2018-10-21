@@ -22,4 +22,5 @@ Updating... :blush:
 #### String
 
 * [Reverse String](problems/String/ReverseString)
+* [Reverse Integer](problems/String/ReverseInteger)
 

@@ -8,7 +8,7 @@ public class Reverse {
         int result = 0;
         while (x != 0) {
             int temp = result * 10 + x % 10;
-            if (temp / 10 != result) {
+            if (temp / 10 != result) { // check if result overflows
                 return 0;
             }
             result = temp;
