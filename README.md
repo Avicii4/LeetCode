@@ -29,3 +29,6 @@ Updating... :blush:
 * [First Unique Character in a String](problems/String/FirstUniqueCharacterinaString)
 
 * [Valid Anagram](problems/String/ValidAnagram)
+
+* [Valid Palindrome](problems/String/ValidPalindrome)
+
