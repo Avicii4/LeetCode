@@ -23,12 +23,9 @@ Updating... :blush:
 #### String
 
 * [Reverse String](problems/String/ReverseString)
-
 * [Reverse Integer](problems/String/ReverseInteger)
-
 * [First Unique Character in a String](problems/String/FirstUniqueCharacterinaString)
-
 * [Valid Anagram](problems/String/ValidAnagram)
-
 * [Valid Palindrome](problems/String/ValidPalindrome)
+* [String to Integer (atoi)](problems/String/StringtoInteger)
 
