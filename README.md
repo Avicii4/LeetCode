@@ -28,4 +28,7 @@ Updating... :blush:
 * [Valid Anagram](problems/String/ValidAnagram)
 * [Valid Palindrome](problems/String/ValidPalindrome)
 * [String to Integer (atoi)](problems/String/StringtoInteger)
+* [Implement strStr()](problems/String/ImplementstrStr())
+* [Count and Say](problems/String/CountandSay)
+* [Longest Common Prefix](problems/String/LongestCommonPrefix)
 
