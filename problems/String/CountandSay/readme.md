@@ -2,7 +2,7 @@
 
 链接：[报数](https://leetcode-cn.com/problems/count-and-say/description/)
 
-题意：按照下列顺序，得出第 n 项：
+题意：按照下列顺序，得出第 *n* 项：
 
 ```
 1.     1
