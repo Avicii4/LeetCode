@@ -32,3 +32,7 @@ Updating... :blush:
 * [Count and Say](problems/String/CountandSay)
 * [Longest Common Prefix](problems/String/LongestCommonPrefix)
 
+#### Linked List
+
+* [Delete Node in a Linked List](problems/Linked_List/DeleteNodeinaLinkedList)
+* [Remove Nth Node From End of List](problems/Linked_List/RemoveNthNodeFromEndofList)
