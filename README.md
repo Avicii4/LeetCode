@@ -19,6 +19,7 @@ Updating... :blush:
 * [Two Sum](problems/Array/TwoSum)
 * [Valid Sudoku](problems/Array/ValidSudoku)
 * [Rotate Image](problems/Array/RotateImage)
+* [3Sum](problems/Array/3Sum)
 
 #### String
 
