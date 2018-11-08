@@ -32,6 +32,7 @@ Updating... :blush:
 * [Implement strStr()](problems/String/ImplementstrStr())
 * [Count and Say](problems/String/CountandSay)
 * [Longest Common Prefix](problems/String/LongestCommonPrefix)
+* [Longest Substring Without Repeating Characters](problems/String/LongestSubstringWithoutRepeatingCharacters)
 
 #### Linked List
 
