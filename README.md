@@ -34,6 +34,7 @@ Updating... :blush:
 * [Count and Say](problems/String/CountandSay)
 * [Longest Common Prefix](problems/String/LongestCommonPrefix)
 * [Longest Substring Without Repeating Characters](problems/String/LongestSubstringWithoutRepeatingCharacters)
+* [Palindrome Number](problems/String/PalindromeNumber)
 
 #### Linked List
 
