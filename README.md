@@ -42,6 +42,7 @@ Updating... :blush:
 * [Remove Nth Node From End of List](problems/Linked_List/RemoveNthNodeFromEndofList)
 * [Reverse Linked List](problems/Linked_List/ReverseLinkedList)
 * [Add Two Numbers](problems/Linked_List/AddTwoNumbers)
+* [Merge Two Sorted Lists](problems/Linked_List/MergeTwoSortedLists)
 
 #### Dynamic Programming
 
