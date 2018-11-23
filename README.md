@@ -52,4 +52,5 @@ Updating... :blush:
 
 #### Math
 
-* [Roman to Integer](problems/Math/RomanToInt)
+* [Roman to Integer](problems/Math/RomantoInteger)
+* [Integer to Roman](problems/Math/IntegertoRoman)
