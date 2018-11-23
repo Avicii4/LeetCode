@@ -6,20 +6,40 @@
 
 分析：完整的罗马数字与阿拉伯数字对照如下
 
-| 字符 | 数值 |
-| :--: | :--: |
-|  I   |  1   |
-|  IV  |  4   |
-|  V   |  5   |
-|  IX  |  9   |
-|  X   |  10  |
-|  XL  |  40  |
-|  L   |  50  |
-|  XC  |  90  |
-|  C   | 100  |
-|  CD  | 400  |
-|  D   | 500  |
-|  CM  | 900  |
-|  M   | 1000 |
+<table>
+<tr>
+    <td>字符</td>
+    <td>I</td>
+    <td>IV</td>
+    <td>V</td>
+    <td>IX</td>
+    <td>X</td>
+    <td>XL</td>
+    <td>L</td>
+    <td>XC</td>
+    <td>C</td>
+    <td>CD</td>
+    <td>D</td>
+    <td>CM</td>
+    <td>M</td>
+</tr>
+<tr>
+    <td>数值</td>
+    <td>1</td>
+    <td>4</td>
+    <td>5</td>
+    <td>9</td>
+    <td>10</td>
+    <td>40</td>
+    <td>50</td>
+    <td>90</td>
+    <td>100</td>
+    <td>400</td>
+    <td>500</td>
+    <td>900</td>
+    <td>1000</td>
+</tr>
+</table>
+
 
 选择与给定的 *num* 最接近但不超过的数值，就可以得出结果。
