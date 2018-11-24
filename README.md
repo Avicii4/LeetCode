@@ -43,6 +43,7 @@ Updating... :blush:
 * [Reverse Linked List](problems/Linked_List/ReverseLinkedList)
 * [Add Two Numbers](problems/Linked_List/AddTwoNumbers)
 * [Merge Two Sorted Lists](problems/Linked_List/MergeTwoSortedLists)
+* [Palindrome Linked List](problems/Linked_List/PalindromeLinkedList)
 
 #### Dynamic Programming
 
