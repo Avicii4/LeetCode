@@ -55,7 +55,7 @@ Updating... :blush:
 #### Tree
 
 * [Maximum Depth of Binary Tree](problems/Tree/MaximumDepthofBinaryTree)
-* 
+* [Validate Binary Search Tree](problems/Tree/ValidateBinarySearchTree)
 
 #### Math
 
