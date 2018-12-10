@@ -65,4 +65,5 @@ Updating... :blush:
 * [Roman to Integer](problems/Math/RomantoInteger)
 * [Integer to Roman](problems/Math/IntegertoRoman)
 * [Container With Most Water](problems/Math/ContainerWithMostWater)
+* [First Bad Version](problems/Math/FirstBadVersion)
 
