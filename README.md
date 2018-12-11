@@ -35,6 +35,7 @@ Updating... :blush:
 * [Longest Common Prefix](problems/String/LongestCommonPrefix)
 * [Longest Substring Without Repeating Characters](problems/String/LongestSubstringWithoutRepeatingCharacters)
 * [Palindrome Number](problems/String/PalindromeNumber)
+* [Valid Parentheses](problems/String/ValidParentheses)
 
 #### Linked List
 
