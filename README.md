@@ -21,6 +21,7 @@ Updating... :blush:
 * [Rotate Image](problems/Array/RotateImage)
 * [3Sum](problems/Array/3Sum)
 * [Merge Sorted Array](problems/Array/MergeSortedArray)
+* [Set Matrix Zeroes](problems/Array/SetMatrixZeroes)
 
 #### String
 
