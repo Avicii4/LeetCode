@@ -22,6 +22,7 @@ Updating... :blush:
 * [3Sum](problems/Array/3Sum)
 * [Merge Sorted Array](problems/Array/MergeSortedArray)
 * [Set Matrix Zeroes](problems/Array/SetMatrixZeroes)
+* [Group Anagrams](problems/Array/GroupAnagrams)
 
 #### String
 
