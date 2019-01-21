@@ -24,6 +24,7 @@ Updating... :blush:
 * [Set Matrix Zeroes](problems/Array/SetMatrixZeroes)
 * [Group Anagrams](problems/Array/GroupAnagrams)
 * [Remove Element](problems/Array/RemoveElement)
+* [3Sum Closest](problems/Array/3SumClosest)
 
 #### String
 
