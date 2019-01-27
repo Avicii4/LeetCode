@@ -12,8 +12,8 @@ class Divide {
         }
         int sign = ((dividend < 0) ^ (divisor < 0) ? -1 : 1);
 
-        long dvd = Math.abs(dividend);
-        long dvs = Math.abs(divisor);
+        long dvd = Math.abs((long)dividend);
+        long dvs = Math.abs((long)divisor);
         int result = 0;
 
         while (dvd >= dvs) {
