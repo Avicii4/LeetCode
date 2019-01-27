@@ -25,6 +25,7 @@ Updating... :blush:
 * [Group Anagrams](problems/Array/GroupAnagrams)
 * [Remove Element](problems/Array/RemoveElement)
 * [3Sum Closest](problems/Array/3SumClosest)
+* [Search in Rotated Sorted Array](problems/Array/SearchinRotatedSortedArray)
 
 #### String
 
