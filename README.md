@@ -26,6 +26,7 @@ Updating... :blush:
 * [Remove Element](problems/Array/RemoveElement)
 * [3Sum Closest](problems/Array/3SumClosest)
 * [Search in Rotated Sorted Array](problems/Array/SearchinRotatedSortedArray)
+* [Combination Sum](problems/Array/CombinationSum)
 
 #### String
 
