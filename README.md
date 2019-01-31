@@ -27,6 +27,7 @@ Updating... :blush:
 * [3Sum Closest](problems/Array/3SumClosest)
 * [Search in Rotated Sorted Array](problems/Array/SearchinRotatedSortedArray)
 * [Combination Sum](problems/Array/CombinationSum)
+* [Search Insert Position](problems/Array/SearchInsertPosition)
 
 #### String
 
