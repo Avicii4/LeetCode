@@ -29,6 +29,7 @@ Updating... :blush:
 * [Combination Sum](problems/Array/CombinationSum)
 * [Combination Sum II](problems/Array/CombinationSum2)
 * [Search Insert Position](problems/Array/SearchInsertPosition)
+* [Find First and Last Position of Element in Sorted Array](problems/Array/FindFirstandLastPositionofElementinSortedArray)
 
 #### String
 
