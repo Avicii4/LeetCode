@@ -62,7 +62,7 @@ Updating... :blush:
 
 #### Dynamic Programming
 
-* [Climbing Stairs](problems/Dynamic_Programming/ClimbStairs)
+* [Climbing Stairs](problems/Dynamic_Programming/ClimbingStairs)
 * [Best Time to Buy and Sell Stock](problems/Dynamic_Programming/BestTimetoBuyandSellStock)
 * [Maximum Subarray](problems/Dynamic_Programming/MaximumSubarray)
 * [Unique Paths](problems/Dynamic_Programming/UniquePaths)
