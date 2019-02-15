@@ -82,5 +82,5 @@ Updating... :blush:
 * [Container With Most Water](problems/Math/ContainerWithMostWater)
 * [First Bad Version](problems/Math/FirstBadVersion)
 * [Divide Two Integers](problems/Math/DivideTwoIntegers)
-
+* [Sqrt(x)](problems/Math/Sqrt(x))
 
