@@ -31,6 +31,7 @@ Updating... :blush:
 * [Search Insert Position](problems/Array/SearchInsertPosition)
 * [Find First and Last Position of Element in Sorted Array](problems/Array/FindFirstandLastPositionofElementinSortedArray)
 * [Trapping Rain Water](problems/Array/TrappingRainWater)
+* [Majority Element](problems/Array/MajorityElement)
 
 #### String
 
