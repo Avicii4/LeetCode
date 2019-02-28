@@ -32,6 +32,7 @@ Updating... :blush:
 * [Find First and Last Position of Element in Sorted Array](problems/Array/FindFirstandLastPositionofElementinSortedArray)
 * [Trapping Rain Water](problems/Array/TrappingRainWater)
 * [Majority Element](problems/Array/MajorityElement)
+* [Search a 2D Matrix](problems/Array/Searcha2DMatrix)
 
 #### String
 
