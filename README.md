@@ -33,6 +33,7 @@ Updating... :blush:
 * [Trapping Rain Water](problems/Array/TrappingRainWater)
 * [Majority Element](problems/Array/MajorityElement)
 * [Search a 2D Matrix](problems/Array/Searcha2DMatrix)
+* [Search a 2D Matrix II](problems/Array/Searcha2DMatrixII)
 
 #### String
 
