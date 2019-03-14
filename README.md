@@ -86,6 +86,6 @@ Updating... :blush:
 * [First Bad Version](problems/Math/FirstBadVersion)
 * [Divide Two Integers](problems/Math/DivideTwoIntegers)
 * [Sqrt(x)](problems/Math/Sqrt(x))
-* [N-Queens](problems/Math/NQueens)
-* [N-Queens II](problems/Math/NQueensII)
+* [N-Queens](problems/Math/N-Queens)
+* [N-Queens II](problems/Math/N-QueensII)
 
