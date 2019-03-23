@@ -51,6 +51,7 @@ Updating... :blush:
 * [Valid Parentheses](problems/String/ValidParentheses)
 * [Generate Parentheses](problems/String/GenerateParentheses)
 * [Add Binary](problems/String/AddBinary)
+* [Multiply Strings](problems/String/MultiplyStrings)
 
 #### Linked List
 
