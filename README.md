@@ -79,6 +79,7 @@ Updating... :blush:
 * [Binary Tree Level Order Traversal](problems/Tree/BinaryTreeLevelOrderTraversal)
 * [Convert Sorted Array to Binary Search Tree](problems/Tree/ConvertSortedArraytoBinarySearchTree)
 * [Same Tree](problems/Tree/SameTree)
+* [Kth Smallest Element in a BST](problems/Tree/KthSmallestElementinaBST)
 
 #### Math
 
