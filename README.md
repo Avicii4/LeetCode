@@ -80,6 +80,7 @@ Updating... :blush:
 * [Convert Sorted Array to Binary Search Tree](problems/Tree/ConvertSortedArraytoBinarySearchTree)
 * [Same Tree](problems/Tree/SameTree)
 * [Kth Smallest Element in a BST](problems/Tree/KthSmallestElementinaBST)
+* [Path Sum](problems/Tree/PathSum)
 
 #### Math
 
