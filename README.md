@@ -71,6 +71,7 @@ Updating... :blush:
 * [Best Time to Buy and Sell Stock](problems/Dynamic_Programming/BestTimetoBuyandSellStock)
 * [Maximum Subarray](problems/Dynamic_Programming/MaximumSubarray)
 * [Unique Paths](problems/Dynamic_Programming/UniquePaths)
+* [Coin Change](problems/Dynamic_Programming/CoinChange)
 
 #### Tree
 
