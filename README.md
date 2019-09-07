@@ -52,6 +52,7 @@ Updating... :blush:
 * [Generate Parentheses](problems/String/GenerateParentheses)
 * [Add Binary](problems/String/AddBinary)
 * [Multiply Strings](problems/String/MultiplyStrings)
+* [Longest Substring with At Least K Repeating Characters](problems/String/LongestSubstringwithAtLeastKRepeatingCharacters)
 
 #### Linked List
 
