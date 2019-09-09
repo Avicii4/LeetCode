@@ -72,6 +72,7 @@ Updating... :blush:
 * [Maximum Subarray](problems/Dynamic_Programming/MaximumSubarray)
 * [Unique Paths](problems/Dynamic_Programming/UniquePaths)
 * [Coin Change](problems/Dynamic_Programming/CoinChange)
+* [Binary Tree Maximum Path Sum](problems/Dynamic_Programming/BinaryTreeMaximumPathSum)
 
 #### Tree
 
