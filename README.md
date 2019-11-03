@@ -34,6 +34,7 @@ Updating... :blush:
 * [Majority Element](problems/Array/MajorityElement)
 * [Search a 2D Matrix](problems/Array/Searcha2DMatrix)
 * [Search a 2D Matrix II](problems/Array/Searcha2DMatrixII)
+* [Median of Two Sorted Arrays](problems/Array/MedianofTwoSortedArrays)
 
 #### String
 
