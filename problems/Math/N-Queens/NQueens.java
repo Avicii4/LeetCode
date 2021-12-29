@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Harry Chou at 2019/02/20.
  * Description: Given an integer n, return all distinct solutions to the

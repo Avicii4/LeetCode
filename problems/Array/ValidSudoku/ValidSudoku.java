@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 /**
  * Created by Harry Chou at 2018/10/20.
  * Description: Determine if a 9x9 Sudoku board is valid.

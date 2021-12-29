@@ -1,4 +1,4 @@
-# Convert Sorted Array to Binary Search Tree
+# Convert Sorted Array to Binary Search2D Tree
 
 链接：[将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/description/)
 

@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Harry Chou at 2018/10/16.
  * Description: Given an array of integers, return indices of the two numbers

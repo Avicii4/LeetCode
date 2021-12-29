@@ -1,4 +1,4 @@
-# Search Insert Position
+# Search2D Insert Position
 
 链接：[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
 

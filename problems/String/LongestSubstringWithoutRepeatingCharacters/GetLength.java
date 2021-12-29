@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by Harry Chou at 2018/11/8.
  * Description: Given a string, find the length of the longest substring without

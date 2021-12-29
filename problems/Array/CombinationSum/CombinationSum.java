@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by Harry Chou at 2019/01/30.
  * Description: Given a set of candidate numbers (candidates) (without

@@ -25,15 +25,15 @@ Updating... :blush:
 * [Group Anagrams](problems/Array/GroupAnagrams)
 * [Remove Element](problems/Array/RemoveElement)
 * [3Sum Closest](problems/Array/3SumClosest)
-* [Search in Rotated Sorted Array](problems/Array/SearchinRotatedSortedArray)
+* [Search2D in Rotated Sorted Array](problems/Array/SearchinRotatedSortedArray)
 * [Combination Sum](problems/Array/CombinationSum)
 * [Combination Sum II](problems/Array/CombinationSum2)
-* [Search Insert Position](problems/Array/SearchInsertPosition)
+* [Search2D Insert Position](problems/Array/SearchInsertPosition)
 * [Find First and Last Position of Element in Sorted Array](problems/Array/FindFirstandLastPositionofElementinSortedArray)
 * [Trapping Rain Water](problems/Array/TrappingRainWater)
 * [Majority Element](problems/Array/MajorityElement)
-* [Search a 2D Matrix](problems/Array/Searcha2DMatrix)
-* [Search a 2D Matrix II](problems/Array/Searcha2DMatrixII)
+* [Search2D a 2D Matrix](problems/Array/Searcha2DMatrix)
+* [Search2D a 2D Matrix II](problems/Array/Searcha2DMatrixII)
 * [Median of Two Sorted Arrays](problems/Array/MedianofTwoSortedArrays)
 
 #### String
@@ -78,10 +78,10 @@ Updating... :blush:
 #### Tree
 
 * [Maximum Depth of Binary Tree](problems/Tree/MaximumDepthofBinaryTree)
-* [Validate Binary Search Tree](problems/Tree/ValidateBinarySearchTree)
+* [Validate Binary Search2D Tree](problems/Tree/ValidateBinarySearchTree)
 * [Symmetric Tree](problems/Tree/SymmetricTree)
 * [Binary Tree Level Order Traversal](problems/Tree/BinaryTreeLevelOrderTraversal)
-* [Convert Sorted Array to Binary Search Tree](problems/Tree/ConvertSortedArraytoBinarySearchTree)
+* [Convert Sorted Array to Binary Search2D Tree](problems/Tree/ConvertSortedArraytoBinarySearchTree)
 * [Same Tree](problems/Tree/SameTree)
 * [Kth Smallest Element in a BST](problems/Tree/KthSmallestElementinaBST)
 * [Path Sum](problems/Tree/PathSum)

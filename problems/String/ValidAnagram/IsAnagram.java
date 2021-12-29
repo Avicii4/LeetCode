@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Created by Harry Chou at 2018/10/25.
  * Description: Given two strings s and t , write a function to determine if t

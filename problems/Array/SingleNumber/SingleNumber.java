@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by Harry Chou at 2018/10/14
  * Description: Given a non-empty array of integers, every element appears twice

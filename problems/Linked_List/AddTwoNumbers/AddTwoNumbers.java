@@ -8,6 +8,7 @@
  *     int val;
  *     ListNode next;
  *     ListNode(int x) { val = x; }
+ * }
  */
 public class AddTwoNumbers {
     public ListNode add(ListNode l1, ListNode l2) {

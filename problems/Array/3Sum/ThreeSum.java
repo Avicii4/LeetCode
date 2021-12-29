@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by Harry Chou at 2018/11/4.
  * Description: Given an array nums of n integers, are there elements a, b, c in

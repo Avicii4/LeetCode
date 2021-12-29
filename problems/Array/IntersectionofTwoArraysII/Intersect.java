@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by Harry Chou at 2018/10/15.
  * Description: Given two arrays, write a function to compute their

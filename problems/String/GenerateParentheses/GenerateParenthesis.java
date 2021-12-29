@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Harry Chou at 2019/01/19.
  * Description: Given n pairs of parentheses, write a function to generate all

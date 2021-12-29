@@ -1,4 +1,4 @@
-# Validate Binary Search Tree
+# Validate Binary Search2D Tree
 
 链接：[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/description/)
 

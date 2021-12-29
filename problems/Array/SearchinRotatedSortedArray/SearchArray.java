@@ -6,7 +6,7 @@
  * array return its index, otherwise return -1.
  */
 
-public class Search {
+public class SearchArray {
     public int search(int[] nums, int target) {
         if (nums.length == 0) {
             return -1;

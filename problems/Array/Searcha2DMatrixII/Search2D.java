@@ -5,7 +5,7 @@
  * 1. Integers in each row are sorted in ascending from left to right. 
  * 2. Integers in each column are sorted in ascending from top to bottom.
  */
-class Search {
+class Search2D {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return false;

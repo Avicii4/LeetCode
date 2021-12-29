@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by Harry Chou at 2019/01/21.
  * Description: Given an array nums of n integers and an integer target, find
