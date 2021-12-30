@@ -27,7 +27,7 @@ Updating... :blush:
 * [3Sum Closest](problems/Array/3SumClosest)
 * [Search2D in Rotated Sorted Array](problems/Array/SearchinRotatedSortedArray)
 * [Combination Sum](problems/Array/CombinationSum)
-* [Combination Sum II](problems/Array/CombinationSum2)
+* [Combination Sum II](problems/Array/CombinationSumII)
 * [Search2D Insert Position](problems/Array/SearchInsertPosition)
 * [Find First and Last Position of Element in Sorted Array](problems/Array/FindFirstandLastPositionofElementinSortedArray)
 * [Trapping Rain Water](problems/Array/TrappingRainWater)
@@ -54,6 +54,8 @@ Updating... :blush:
 * [Add Binary](problems/String/AddBinary)
 * [Multiply Strings](problems/String/MultiplyStrings)
 * [Longest Substring with At Least K Repeating Characters](problems/String/LongestSubstringwithAtLeastKRepeatingCharacters)
+* [Length Of Last Word](problems/String/LengthOfLastWord)
+* [Letter Combinations of a Phone Number](problems/String/LetterCombinationsofaPhoneNumber)
 
 #### Linked List
 
@@ -64,7 +66,7 @@ Updating... :blush:
 * [Merge Two Sorted Lists](problems/Linked_List/MergeTwoSortedLists)
 * [Palindrome Linked List](problems/Linked_List/PalindromeLinkedList)
 * [Linked List Cycle](problems/Linked_List/LinkedListCycle)
-* [Letter Combinations of a Phone Number](problems/String/LetterCombinationsofaPhoneNumber)
+* [Remove Duplicates from Sorted List](problems/Linked_List/DeleteDuplicates)
 
 #### Dynamic Programming
 
