@@ -12,7 +12,7 @@ public class SellStock {
         for (int i = 0; i < prices.length - 1; i++) {
             for (int j = i + 1; j < prices.length; j++) {
                 if (prices[i] < prices[j]) {
-                    result = (prices[j] - prices[i] > result) ? (prices[j] - prices[i]) : result;
+                    result = Math.max(prices[j] - prices[i], result);
                 }
             }
         }
@@ -25,11 +25,11 @@ public class SellStock {
         }
         int min = prices[0];
         int result = 0;
-        for (int i = 0; i < prices.length; i++) {
-            if (prices[i] < min)
-                min = prices[i];
-            else if (prices[i] - min > result)
-                result = prices[i] - min;
+        for (int price : prices) {
+            if (price < min)
+                min = price;
+            else if (price - min > result)
+                result = price - min;
         }
         return result;
     }
