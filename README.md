@@ -1,6 +1,6 @@
 # LeetCode
 
-My accepted Java [LeetCode](https://leetcode-cn.com/) solutions with some analysis.
+My accepted Java/Python [LeetCode](https://leetcode-cn.com/) solutions with some analysis.
 
 Updating... :blush:
 
