@@ -18,8 +18,7 @@ class Solution:
             a[tmp], a[i] = a[i], a[tmp]
 
     def bubble_sort(self, a: List[int]):
-        n = len(a)
-        for j in range(1, n):
+        for j in range(1, len(a)):
             flag = 0
             for i in range(n - j):
                 if a[i] > a[i + 1]:
