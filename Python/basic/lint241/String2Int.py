@@ -1,17 +1,14 @@
-from traceback import print_tb
-
-
 class Solution:
 
-    def stringToInteger(self, str: str) -> int:
-        n = len(str)
-        if str[0] == '-':
+    def stringToInteger(self, target: str) -> int:
+        n = len(target)
+        if target[0] == '-':
             flag, n = -1, n - 1
         else:
             flag = 1
         num = 0
-        for i in range(len(str) - n, len(str)):
-            num += ord(str[i]) - 48
+        for i in range(len(target) - n, len(target)):
+            num += ord(target[i]) - 48
             num *= 10
         return num // 10 * flag
 

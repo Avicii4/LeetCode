@@ -1,4 +1,7 @@
-from Python.basic.lint466.lintcode import (
+from typing import (
+    List,
+)
+from lintcode import (
     ListNode,
 )
 
@@ -13,16 +16,17 @@ class ListNode(object):
 
 class Solution:
     """
-    @param head: the first node of linked list.
-    @return: An integer
+    @param head: the head of linked list.
+    @return: An integer list
     """
 
-    def count_nodes(self, head: ListNode) -> int:
-        cnt = 0
+    def to_array_list(self, head: ListNode) -> List[int]:
+        # write your code here
+        res = []
         while head is not None:
-            cnt += 1
+            res.append(head.val)
             head = head.next
-        return cnt
+        return res
 
 
 if __name__ == '__main__':
@@ -32,4 +36,4 @@ if __name__ == '__main__':
     lst.next = ListNode(3)
     lst = lst.next
     lst.next = ListNode(5)
-    print(sol.count_nodes(head))
+    print(sol.to_array_list(head))

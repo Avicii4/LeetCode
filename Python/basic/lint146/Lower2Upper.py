@@ -8,7 +8,7 @@ class Solution:
         letters = list(letters)
         length = len(letters)
         for i in range(length):
-            if ord(letters[i]) >= 97 and ord(letters[i]) <= 122:
+            if 97 <= ord(letters[i]) <= 122:
                 letters[i] = letters[i].upper()
         return ''.join(letters)
 
