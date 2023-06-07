@@ -10,6 +10,7 @@ class Solution:
         for i in range(length):
             if 97 <= ord(letters[i]) <= 122:
                 letters[i] = letters[i].upper()
+                # or: letters[i] = chr(ord(letters[i]) - 32)
         return ''.join(letters)
 
 

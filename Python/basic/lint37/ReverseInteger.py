@@ -6,11 +6,11 @@ class Solution:
 
     def reverse_integer(self, number: int) -> int:
         a = number // 100
-        b = (number - a * 100) // 10
+        b = (number % 100) // 10
         c = number % 10
-        return c * 100 + b * 10 + a
+        return 100 * c + 10 * b + a
 
 
 if __name__ == '__main__':
     sol = Solution()
-    print(sol.reverse_integer(150))
+    print(sol.reverse_integer(786))
