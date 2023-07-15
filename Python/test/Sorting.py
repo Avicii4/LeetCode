@@ -12,7 +12,6 @@ def bubble_sort(nums: List[int]):
             if nums[j] > nums[j + 1]:
                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
                 flag = True
-    return nums
 
 
 def insertion_sort(nums: List[int]):
@@ -23,11 +22,15 @@ def insertion_sort(nums: List[int]):
             nums[j + 1] = nums[j]
             j -= 1
         nums[j + 1] = tmp
-    return nums
 
 def selection_sort(nums: List[int]):
-    ...
-
+    n = len(nums)
+    for i in range(n - 1):
+        tmp = i
+        for j in range(i + 1, n):
+            if nums[tmp] > nums[j]:
+                tmp = j
+        nums[i], nums[tmp] = nums[tmp], nums[i]
 
 
 if __name__ == '__main__':
@@ -36,7 +39,7 @@ if __name__ == '__main__':
         for _ in range(n):
             a.append(randint(0, 1000))
         a_sort = sorted(a)
-        insertion_sort(a)
+        selection_sort(a)
         if not a == a_sort:
             print(a)
             print(a_sort)
