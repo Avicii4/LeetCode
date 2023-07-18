@@ -42,6 +42,7 @@ def selection_sort(nums: List[int]):
 
 
 if __name__ == '__main__':
+    # 用户对数生成器测试
     for _ in range(100):
         n, a = randint(1, 100), []
         for _ in range(n):
