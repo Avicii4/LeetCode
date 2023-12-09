@@ -9,7 +9,7 @@ def odd_times_number(nums: List[int]):
     eor = 0
     for num in nums:
         eor ^= num
-    # eor = a^b, eor!=0
+    # eor = a^b, eor!=0 找出eor二进制里最右侧的1
     right_one = eor & (~eor + 1)
     one_answer = 0
     for num in nums:
