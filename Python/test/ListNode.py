@@ -3,7 +3,7 @@ def output(head):
         print(head.value, end="")
         head = head.next
         if head is not None:
-            print('->', end="")
+            print(' → ', end="")
     print()
 
 
@@ -20,7 +20,7 @@ def reverse_linked_list(head):
         head.next = pre
         pre = head
         head = next
-    return pre
+    return pre  # 注意最后返回pre,此时head为空,pre是原来的末尾,如今是头
 
 
 def delete_node_with_value(head, target):
@@ -40,11 +40,13 @@ def delete_node_with_value(head, target):
 
 
 if __name__ == '__main__':
-    node_arr=[ListNode(x) for x in range(10)]
-    node_arr[7].value=0
+    # Create LinkedList
+    node_arr = [ListNode(x) for x in range(10)]
+    node_arr[7].value = 0
+
     # Connecting nodes
     for i in range(9):
-        node_arr[i].next=node_arr[i+1]
+        node_arr[i].next = node_arr[i + 1]
     output(node_arr[0])
-    # output(reverse_linked_list(node_arr[0]))
-    output(delete_node_with_value(node_arr[0],0))
+    output(reverse_linked_list(node_arr[0]))
+    # output(delete_node_with_value(node_arr[0], 0))

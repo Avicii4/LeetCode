@@ -18,7 +18,7 @@ def insertion_sort(nums: List[int]):
     for i in range(1, len(nums)):
         tmp = nums[i]  # 要插进前面的数
         j = i - 1
-        while j >= 0 and nums[j] >= tmp:  # 若前面的数更大，则挪后面去
+        while j >= 0 and nums[j] >= tmp:  # 注意这里用while; 若前面的数更大，则挪后面去
             nums[j + 1] = nums[j]
             j -= 1
         nums[j + 1] = tmp  # 此时位置合适，插入 tmp
