@@ -58,7 +58,7 @@ def process(nums, left, right):
 
 def merge_both(nums, left, mid, right):
     help = [0 for _ in range(right - left + 1)]
-    p, q = left, mid + 1  # 指向两部分数组各自的最右侧
+    p, q = left, mid + 1  # 指向两部分数组各自的最左侧
     cur = 0
     while p <= mid and q <= right:
         if nums[p] <= nums[q]:
@@ -80,6 +80,24 @@ def merge_both(nums, left, mid, right):
         nums[left + i] = help[i]
 
 
+def merge_sort_iter(nums: List[int]):
+    if nums is None or len(nums) < 2:
+        return
+    merge_size = 1  # 要merge的左组长度，左组右组的组内是有序的
+    n = len(nums)
+    while merge_size < n:
+        left = 0
+        while left < n:
+            mid = left + merge_size - 1  # 左组的最右位置
+            if mid >= n:  # 剩下的数不够再分出左右两组了，它们肯定是有序的
+                break
+            # left...mid  /  mid+1...right
+            right = min(mid + merge_size, n - 1)  # 右组的最右位置
+            merge_both(nums, left, mid, right)
+            left = right + 1  # 进行本轮的下一次左右组merge
+        merge_size <<= 1
+
+
 if __name__ == '__main__':
     # 用户对数生成器测试
     for _ in range(1000):
@@ -87,10 +105,11 @@ if __name__ == '__main__':
         for _ in range(n):
             a.append(randint(0, 1000))
         a_sort = sorted(a)
-        merge_sort(a)
+        merge_sort_iter(a)
         if not a == a_sort:
             print(a)
             print(a_sort)
             exit('排序失败！')
     else:
         print('测试通过！')
+
