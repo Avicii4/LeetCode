@@ -44,13 +44,81 @@ def selection_sort(nums: List[int]):
         nums[i], nums[cur] = nums[cur], nums[i]
 
 
+def heap_sort(nums: List[int]):
+    if nums is None or len(nums) < 2:
+        return
+
+    for i in range(len(nums) - 1, -1, -1):
+        heapify(nums, i, len(nums))
+
+    heap_size = len(nums) - 1
+    nums[0], nums[heap_size] = nums[heap_size], nums[0]
+    while heap_size > 0:
+        heapify(nums, 0, heap_size)
+        heap_size -= 1
+        nums[0], nums[heap_size] = nums[heap_size], nums[0]
+
+
+def heapify(nums, index, heap_size):
+    lchild = 2 * index + 1
+    while lchild < heap_size:
+        larger = lchild
+        if lchild + 1 < heap_size and nums[lchild + 1] > nums[lchild]:
+            larger += 1
+        if nums[index] > nums[larger]:
+            larger = index
+        if larger == index:
+            break
+        nums[index], nums[larger] = nums[larger], nums[index]
+        index = larger
+        lchild = 2 * index + 1
+
+
+def quick_sort(nums: List[int]):
+    if nums is None or len(nums) < 2:
+        return
+    quick_process(nums, 0, len(nums) - 1)
+
+
+def quick_process(nums, left, right):
+    if left >= right:
+        return
+    random_loc = random.randint(left, right)
+    nums[random_loc], nums[right] = nums[right], nums[random_loc]
+    equal_area = partition(nums, left, right)
+    quick_process(nums, left, equal_area[0] - 1)
+    quick_process(nums, equal_area[1] + 1, right)
+
+
+def partition(nums, left, right):
+    if left > right:
+        return -1, -1
+    if left == right:
+        return left, right
+    less = left - 1
+    more = right
+    i = left
+    while i < more:
+        if nums[i] == nums[right]:
+            i += 1
+        elif nums[i] < nums[right]:
+            less += 1
+            nums[less], nums[i] = nums[i], nums[less]
+            i += 1
+        else:
+            more -= 1
+            nums[more], nums[i] = nums[i], nums[more]
+    nums[more], nums[right] = nums[right], nums[more]
+    return less + 1, more
+
+
 if __name__ == '__main__':
     # 排序正确性测试
     for _ in range(100):
         array_length = random.randint(1, 1000)
         random_array_1 = [random.randint(-1000, 1000) for _ in range(array_length)]
         random_array_2 = random_array_1.copy()
-        selection_sort(random_array_1)
+        quick_sort(random_array_1)
         random_array_2.sort()
         if not random_array_1 == random_array_2:
             print('Wrong!')
