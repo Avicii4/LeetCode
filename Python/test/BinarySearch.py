@@ -2,13 +2,13 @@ from typing import List
 from random import randint
 
 
-def exisit(nums: List[int], target: int) -> bool:
+def exist(nums: List[int], target: int) -> bool:
     """
     搜索是否存在一个数
     """
     nums.sort()
     left, right = 0, len(nums) - 1
-    while left < right:
+    while left < right:  # 这里没等号，因为只需要return语句会检查left==right时的情况
         mid = (left + right) >> 1
         if nums[mid] == target:
             return True
@@ -27,7 +27,7 @@ def leftest_index(nums: List[int], target: int) -> int:
     nums.sort()
     left, right = 0, len(nums) - 1
     res = -1
-    while left <= right:  # 注意这里有等号！！
+    while left <= right:
         mid = (left + right) >> 1
         if nums[mid] >= target:
             res = mid
@@ -59,21 +59,25 @@ def partial_min(nums: List[int]) -> int:
 
 
 if __name__ == '__main__':
-    for _ in range(100):
-        n, a = randint(1, 100), []
-        for _ in range(n):
-            t = randint(0, 1000)
-            a.append(t)
-        for i in range(n - 1):
-            if a[i] == a[i + 1]:
-                break
-        res = partial_min(a)
-        if (res == 0 and a[res] < a[res + 1]) or (res == n - 1 and a[res] < a[res - 1]) or (
-                a[res - 1] > a[res] < a[res + 1]):
-            pass
+    try:
+        for _ in range(100):
+            n, a = randint(1, 100), []
+            for _ in range(n):
+                t = randint(0, 1000)
+                a.append(t)
+            for i in range(n - 1):
+                if a[i] == a[i + 1]:
+                    break
+            res = partial_min(a)
+            if (res == 0 and n==1) or (res == 0 and a[res] < a[res + 1]) or (res == n - 1 and a[res] < a[res - 1]) or (
+                    a[res - 1] > a[res] < a[res + 1]):
+                pass
+            else:
+                print(a)
+                print(res)
+                exit('测试失败！')
         else:
-            print(a)
-            print(res)
-            exit('测试失败！')
-    else:
-        print('测试通过！')
+            print('测试通过！')
+    except(Exception):
+        print(n)
+        print(res)
