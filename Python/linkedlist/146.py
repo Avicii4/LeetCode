@@ -16,7 +16,7 @@ class LRUCache:
     def __init__(self, capacity: int):
         self.capacity = capacity
         self.map = dict()  # <key, *Node(k,v)>
-        # least.next指向LRU，most.prev指向MRU
+        # least.next指向LRU, most.prev指向MRU
         self.least, self.most = Node(0, 0), Node(0, 0)
         # 开始时仅两个节点构成双向链表
         self.least.next = self.most
@@ -29,7 +29,7 @@ class LRUCache:
             p = p.next
         print('Null')
 
-    def insert(self, node):
+    def insert(self, node):  # 凡是插入，都是插到most节点之前
         pre = self.most.prev
         pre.next = node
         node.prev, node.next = pre, self.most

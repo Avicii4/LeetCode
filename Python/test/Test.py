@@ -1,6 +1,7 @@
 from time import time
 from typing import List
 import random
+from Tree import TreeNode
 
 
 def bubble_sort(nums: List[int]):
@@ -110,6 +111,19 @@ def partition(nums, left, right):
             nums[more], nums[i] = nums[i], nums[more]
     nums[more], nums[right] = nums[right], nums[more]
     return less + 1, more
+
+
+def pre_no_recur(head:TreeNode):
+    if head:
+        stack=[head]
+        while len(stack)>0:
+            pop_node=stack.pop()
+            print(pop_node.val)
+            if pop_node.right:
+                stack.append(pop_node.right)
+            if pop_node.left:
+                stack.append(pop_node.left)
+
 
 
 if __name__ == '__main__':
