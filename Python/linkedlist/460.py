@@ -1,8 +1,7 @@
 from collections import defaultdict
 
 """
-区别于146 LRU 的设计，为每一种频率数的节点维护一个双向链表
-
+区别于146 LRU 的设计，本题为每一种频率数的节点维护一个双向链表
 """
 
 

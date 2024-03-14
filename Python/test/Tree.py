@@ -1,8 +1,19 @@
+from typing import List
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+
+class DifferentNode:
+    def __init__(self, value, left=None, right=None, parent=None):
+        self.value = value
+        self.left = left
+        self.right = right
+        self.parent = parent
 
 
 def build_tree():
@@ -16,6 +27,25 @@ def build_tree():
     root.left = TreeNode(2, TreeNode(4), TreeNode(5))
     root.right = TreeNode(3, TreeNode(6), TreeNode(7))
     return root
+
+
+def build_tree_parent():
+    node1 = DifferentNode(1)
+    node2 = DifferentNode(2, parent=node1)
+    node3 = DifferentNode(3, parent=node1)
+    node4 = DifferentNode(4, parent=node2)
+    node5 = DifferentNode(5, parent=node2)
+    node6 = DifferentNode(6, parent=node3)
+    node7 = DifferentNode(7, parent=node3)
+
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node2.right = node5
+    node3.left = node6
+    node3.right = node7
+
+    return node1  # 返回根节点
 
 
 def preorder_traversal(node):
@@ -251,9 +281,169 @@ def deserialize_levelorder(node_list):
     return head
 
 
+def get_predecessor(head: DifferentNode):
+    if head:
+        if head.right:
+            p = head.right
+            while p.left:
+                p = p.left
+            return p
+        else:
+            while head.parent and head.parent.left != head:
+                head = head.parent
+            return head.parent
+    else:
+        return None
+
+
+def paper_fold(n: int):
+    print_paper_fold(1, n, True)
+
+
+def print_paper_fold(level, n, down):
+    if level > n:
+        return
+    print_paper_fold(level + 1, n, True)  # 上面是凹下去的
+    print("down" if down else 'up')
+    print_paper_fold(level + 1, n, False)  # 下面是凸的
+
+
+def is_balanced(head: TreeNode):
+    return balance_process(head)[0]
+
+
+def balance_process(head: TreeNode):
+    if not head:
+        return True, 0
+
+    lbalanced, lheight = balance_process(head.left)
+    rbalanced, rheight = balance_process(head.right)
+
+    height = max(lheight, rheight) + 1
+    balanced = lbalanced and rbalanced and abs(lheight - rheight) <= 1
+    return balanced, height
+
+
+def build_unbalanced_tree():
+    # 构造不平衡的树
+    #         1
+    #        / \
+    #       2   3
+    #      /     \
+    #     4       5
+    #    /
+    #   6
+    node1 = TreeNode(1)
+    node2 = TreeNode(2)
+    node3 = TreeNode(3)
+    node4 = TreeNode(4)
+    node5 = TreeNode(5)
+    node6 = TreeNode(6)
+
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node3.right = node5
+    node4.left = node6
+
+    return node1  # 返回根节点
+
+
+def max_height(head: TreeNode):
+    return process_height(head)[0]
+
+
+def process_height(head: TreeNode):
+    if not head:
+        return 0, 0
+
+    lmax_distance, lheight = process_height(head.left)
+    rmax_distance, rheight = process_height(head.right)
+
+    max_distance = max(lheight + rheight + 1, lmax_distance, rmax_distance)
+    height = max(lheight, rheight) + 1  # 本树的高度
+
+    return max_distance, height
+
+
+class BSTInfo:
+    # 分别返回：当前子树最大的BST数量、当前子树是不是BST、当前子树里的最大值、最小值
+    def __init__(self, max_num, is_bst, max_val, min_val):
+        self.max_num = max_num
+        self.is_bst = is_bst
+        self.max_val = max_val
+        self.min_val = min_val
+
+
+def max_bst_node_num(head: TreeNode):
+    if not head:
+        return 0
+
+
+def process_bst(head: TreeNode):
+    if not head:
+        # 空树返回空的BSTInfo，然后代码里再判空
+        return BSTInfo(0, True, None, None)
+
+    left_info = process_bst(head.left)
+    right_info = process_bst(head.right)
+
+    cur_max_val, cur_min_val = head.val, head.val
+    if left_info.max_val:
+        cur_max_val = max(cur_max_val, left_info.max_val)
+    if left_info.min_val:
+        cur_min_val = min(cur_min_val, left_info.min_val)
+    if right_info.max_val:
+        cur_max_val = max(cur_max_val, right_info.max_val)
+    if right_info.min_val:
+        cur_min_val = min(cur_min_val, right_info.min_val)
+
+    # 先拿出左右子树的最大BST节点数
+    cur_max_num = max(left_info.max_num, right_info.max_num)
+
+    cur_is_bst = (left_info.is_bst and
+                  right_info.is_bst and
+                  left_info.max_val < head.val < right_info.min_val)
+    if cur_is_bst:
+        cur_is_bst = left_info.max_num + right_info.max_num + 1
+
+    return BSTInfo(cur_max_num, cur_is_bst, cur_max_val, cur_min_val)
+
+
+class Employee:
+    def __init__(self, happy, subordinates):
+        self.happy = happy
+        self.subordinates = subordinates
+
+
+def max_happiness(boss: Employee):
+    if not boss:
+        return 0
+    return process_happiness(boss)
+
+
+def process_happiness(x: Employee):
+    # 返回内容：x来的
+    if not x.subordinates:
+        return x.happy, 0
+    yes = x.happy
+    no = 0
+    for e in x.subordinates:   # 遍历所有直接下属员工
+        yes_sub, no_sub = process_happiness(e)
+        yes += no_sub  # 当前员工来，那么直接下属不可以来
+        no += max(yes_sub, no_sub)  # 当前员工不来，那么直接下属可来可不来
+    return yes, no
+
+
 if __name__ == '__main__':
+    r = build_unbalanced_tree()
+    print(is_balanced(r))
+
     # 构建树
-    root = build_tree()
+    # root = build_tree()
+    # root = build_tree_parent()
+    # print(get_predecessor(root).value)
+    # paper_fold(3)
     # 先序遍历
     # print("Preorder traversal:")
     # preorder_traversal(root)
@@ -277,6 +467,6 @@ if __name__ == '__main__':
     # t = deserialize_preorder(a)
     # print(serialize_preorder(t))
     # print(serialize_levelorder(root))
-    a=[1, 2, 3, 4, 5, 6, 7, None, None, None, None, None, None, None, None]
-    r=deserialize_levelorder(a)
-    print(serialize_levelorder(r))
+    # a = [1, 2, 3, 4, 5, 6, 7, None, None, None, None, None, None, None, None]
+    # r = deserialize_levelorder(a)
+    # print(serialize_levelorder(r))

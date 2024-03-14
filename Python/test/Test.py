@@ -124,6 +124,60 @@ def pre_no_recur(head:TreeNode):
             if pop_node.left:
                 stack.append(pop_node.left)
 
+def in_no_recur(head:TreeNode):
+    if head:
+        stack=[head]
+        while len(stack)>0 or head:
+            if head:
+                stack.append(head)
+                head=head.left
+            else:
+                pop_node=stack.pop()
+                print(pop_node.val)
+                head=pop_node.right
+
+
+def bfs(head:TreeNode):
+    if head:
+        queue=[head]
+        while len(queue)>0:
+            node=queue.pop(0)
+            print(node.val)
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+
+
+def max_depth(head:TreeNode):
+    if not head:
+        return 0
+    queue=[head]
+    res=0
+    cur_end,next_end=None,None
+    cur_level_width=0
+
+    while len(queue)>0:
+        node=queue.pop(0)
+        cur_level_width+=1
+        if node.left:
+            queue.append(node.left)
+            next_end=node.left
+        if node.right:
+            queue.append(node.right)
+            next_end=node.right
+        if node == cur_end:
+            if cur_level_width>res:
+                res = cur_level_width
+            cur_level_width=0
+            cur_end=next_end
+    return res
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
