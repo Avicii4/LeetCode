@@ -54,7 +54,7 @@ class Heap:
 
 
 if __name__ == '__main__':
-    h=Heap()
+    h = Heap()
     h.heap_push(9)
     h.heap_push(3)
     h.heap_push(6)

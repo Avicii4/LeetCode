@@ -366,6 +366,21 @@ def process_height(head: TreeNode):
     return max_distance, height
 
 
+def is_full(root: TreeNode):
+    node_num, height = process_full(root)
+    return (1 << height) - 1 == node_num
+
+
+def process_full(node: TreeNode):
+    if not node:
+        return 0, 0
+
+    l_num, l_height = process_full(node.left)
+    r_num, r_height = process_full(node.right)
+
+    return l_num + r_num + 1, max(l_height, r_height) + 1
+
+
 class BSTInfo:
     # 分别返回：当前子树最大的BST数量、当前子树是不是BST、当前子树里的最大值、最小值
     def __init__(self, max_num, is_bst, max_val, min_val):
@@ -428,7 +443,7 @@ def process_happiness(x: Employee):
         return x.happy, 0
     yes = x.happy
     no = 0
-    for e in x.subordinates:   # 遍历所有直接下属员工
+    for e in x.subordinates:  # 遍历所有直接下属员工
         yes_sub, no_sub = process_happiness(e)
         yes += no_sub  # 当前员工来，那么直接下属不可以来
         no += max(yes_sub, no_sub)  # 当前员工不来，那么直接下属可来可不来

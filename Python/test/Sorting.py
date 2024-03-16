@@ -45,6 +45,8 @@ def selection_sort(nums: List[int]):
 """
 归并排序
 """
+
+
 def merge_sort(nums: List[int]):
     if nums is None or len(nums) < 2:
         return
@@ -105,6 +107,8 @@ def merge_sort_iter(nums: List[int]):
 """
 快速排序
 """
+
+
 def quick_sort(nums: List[int]):
     if nums is None or len(nums) < 2:
         return
@@ -155,6 +159,8 @@ def partition(nums, left, right):
 """
 堆排序
 """
+
+
 def heap_sort(nums: List[int]):
     """
     1. 先将整个数组调整为大根堆
@@ -197,16 +203,62 @@ def heapify(nums, index, heap_size):
         lchild_idx = 2 * index + 1  # 继续往下
 
 
+def counting_sort(arr):
+    # 找出数组中的最大值和最小值
+    max_val = max(arr)
+    min_val = min(arr)
+
+    # 统计数组中每个元素出现的次数
+    count = [0] * (max_val - min_val + 1)
+    for num in arr:
+        count[num - min_val] += 1
+
+    # 根据统计信息重建排序后的数组
+    sorted_arr = []
+    for i in range(min_val, max_val + 1):
+        sorted_arr.extend([i] * count[i - min_val])
+
+    return sorted_arr
+
+
+def radix_sort(arr):
+    max_val = max(arr)
+    n = len(arr)
+    exp = 1
+    while max_val // exp > 0:
+        output = [0] * n
+        count = [0] * 10  # count[i]代表当前位上数字等于i的元素有多少
+
+        for i in range(n):
+            index = (arr[i] // exp) % 10
+            count[index] += 1
+        for i in range(1, 10):
+            # count[i]代表当前位上数字小等于i的元素有多少
+            count[i] += count[i - 1]
+        # 根据计数数组将元素放置到正确的位置上
+        i = n - 1
+        while i >= 0:  # 倒着遍历
+            index = (arr[i] // exp) % 10
+            output[count[index] - 1] = arr[i]
+            count[index] -= 1
+            i -= 1
+        # 将本轮排序好的数组复制回原数组
+        for i in range(n):
+            arr[i] = output[i]
+
+        exp *= 10
+
+
 if __name__ == '__main__':
     # 用户对数生成器测试
-    for _ in range(10000):
+    for _ in range(100000):
         n, a = randint(1, 100), []
         for _ in range(n):
-            a.append(randint(0, 1000))
+            a.append(randint(0, 999))
         a_sort = sorted(a)
         # merge_sort_iter(a)
         # quick_sort(a)
-        heap_sort(a)
+        radix_sort(a)
         if not a == a_sort:
             print(a)
             print(a_sort)
