@@ -113,35 +113,36 @@ def partition(nums, left, right):
     return less + 1, more
 
 
-def pre_no_recur(head:TreeNode):
+def pre_no_recur(head: TreeNode):
     if head:
-        stack=[head]
-        while len(stack)>0:
-            pop_node=stack.pop()
+        stack = [head]
+        while len(stack) > 0:
+            pop_node = stack.pop()
             print(pop_node.val)
             if pop_node.right:
                 stack.append(pop_node.right)
             if pop_node.left:
                 stack.append(pop_node.left)
 
-def in_no_recur(head:TreeNode):
+
+def in_no_recur(head: TreeNode):
     if head:
-        stack=[head]
-        while len(stack)>0 or head:
+        stack = [head]
+        while len(stack) > 0 or head:
             if head:
                 stack.append(head)
-                head=head.left
+                head = head.left
             else:
-                pop_node=stack.pop()
+                pop_node = stack.pop()
                 print(pop_node.val)
-                head=pop_node.right
+                head = pop_node.right
 
 
-def bfs(head:TreeNode):
+def bfs(head: TreeNode):
     if head:
-        queue=[head]
-        while len(queue)>0:
-            node=queue.pop(0)
+        queue = [head]
+        while len(queue) > 0:
+            node = queue.pop(0)
             print(node.val)
             if node.left:
                 queue.append(node.left)
@@ -149,38 +150,42 @@ def bfs(head:TreeNode):
                 queue.append(node.right)
 
 
-def max_depth(head:TreeNode):
+def max_depth(head: TreeNode):
     if not head:
         return 0
-    queue=[head]
-    res=0
-    cur_end,next_end=None,None
-    cur_level_width=0
+    queue = [head]
+    res = 0
+    cur_end, next_end = None, None
+    cur_level_width = 0
 
-    while len(queue)>0:
-        node=queue.pop(0)
-        cur_level_width+=1
+    while len(queue) > 0:
+        node = queue.pop(0)
+        cur_level_width += 1
         if node.left:
             queue.append(node.left)
-            next_end=node.left
+            next_end = node.left
         if node.right:
             queue.append(node.right)
-            next_end=node.right
+            next_end = node.right
         if node == cur_end:
-            if cur_level_width>res:
+            if cur_level_width > res:
                 res = cur_level_width
-            cur_level_width=0
-            cur_end=next_end
+            cur_level_width = 0
+            cur_end = next_end
     return res
 
 
-
-
-
-
+def min_dictionary_order(strs):
+    n = len(strs)
+    for i in range(n - 1, 0, -1):
+        for j in range(i):
+            if strs[j] + strs[j + 1] > strs[j + 1] + strs[j]:
+                strs[j], strs[j + 1] = strs[j + 1], strs[j]
+    return "".join(strs)
 
 
 if __name__ == '__main__':
+    min_dictionary_order(['b', 'c', 'a'])
     # 排序正确性测试
     for _ in range(100):
         array_length = random.randint(1, 1000)

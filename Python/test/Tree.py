@@ -450,6 +450,58 @@ def process_happiness(x: Employee):
     return yes, no
 
 
+def lowest_ancestor_1(head: TreeNode, a: TreeNode, b: TreeNode):
+    parent_map = {}
+    fill_map(head, parent_map)
+    a_set = set()
+    cur = a
+    a_set.add(cur)
+    while cur in parent_map:  # 把a的所有祖先依次加入集合
+        cur = parent_map[cur]
+        a_set.add(cur)
+    cur = b
+    while cur not in a_set:  # 查看b的祖先，如果也在a的祖先集合中，那就是公共祖先
+        cur = parent_map[cur]
+    return cur
+
+
+def fill_map(head, parent_map):
+    if head.left:
+        parent_map[head.left] = head
+        fill_map(head.left, parent_map)
+    if head.right:
+        parent_map[head.right] = head
+        fill_map(head.right, parent_map)
+
+
+def lowest_ancestor_2(head: TreeNode, a: TreeNode, b: TreeNode):
+    return process_ancestor(head, a, b)[0]
+
+
+def process_ancestor(node, a, b):
+    # 返回的三个信息是：目前a和b的公共祖先，是否在孩子中发现了a，是否在孩子中发现了b
+    if not node:
+        return None, False, False
+
+    left_info = process_ancestor(node.left, a, b)
+    right_info = process_ancestor(node.right, a, b)
+
+    find_a = node == a or left_info[1] or right_info[1]
+    find_b = node == b or left_info[2] or right_info[2]
+
+    # 确定a和b最初的交汇点（最低祖先）
+    ans = None
+    if left_info[0] is not None:  # 若node的左子树上把a和b都找到了
+        ans = left_info[0]
+    if right_info[0] is not None:  # 若node右左子树上把a和b都找到了
+        ans = right_info[0]
+    if ans is None:  # 上面两个if都没中
+        if find_a and find_b:
+            ans = node
+
+    return ans, find_a, find_b
+
+
 if __name__ == '__main__':
     r = build_unbalanced_tree()
     print(is_balanced(r))
