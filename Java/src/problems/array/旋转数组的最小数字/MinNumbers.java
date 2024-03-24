@@ -1,3 +1,5 @@
+package problems.array.旋转数组的最小数字;
+
 /**
  * Created by Harry Chou at 2019/4/15.
  */
