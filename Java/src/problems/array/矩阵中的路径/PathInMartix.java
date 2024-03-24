@@ -41,7 +41,7 @@ public class PathInMartix {
 	public static void main(String[] args) {
 		char[] matrix = new char[] {'a', 'b', 'c', 'e', 's', 'f', 'c', 's', 'a', 'd', 'e', 'e'};
 		char[] str = new char[] {'b', 'c', 'c', 'e', 'd'};
-		boolean result = new pathInMartix().hasPath(matrix, 3, 4, str);
+		boolean result = new PathInMartix().hasPath(matrix, 3, 4, str);
 		System.out.println(result);
 	}
 }

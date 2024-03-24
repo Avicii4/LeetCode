@@ -1,3 +1,7 @@
+package problems.linkedlist.链表中环的入口结点;
+
+import problems.util.ListNode;
+
 /**
  * Created by Harry Chou at 2019/7/17.
  */
@@ -25,11 +29,3 @@ public class EntryNodeOfLoop {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}

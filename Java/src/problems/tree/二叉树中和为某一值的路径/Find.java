@@ -10,6 +10,7 @@
  * }
  */
 import java.util.ArrayList;
+import problems.util.TreeNode;
 
 public class Find {
     public ArrayList<ArrayList<Integer>> findPath(TreeNode root, int target) {
@@ -17,7 +18,7 @@ public class Find {
         if (root == null) {
             return result;
         }
-        find(result, new ArrayList<Integer>(), root, target);
+        find(result, new ArrayList<>(), root, target);
         return result;
     }
 

@@ -1,14 +1,11 @@
+package problems.linkedlist.合并两个排序的链表;
+
+import problems.util.ListNode;
+
 /**
  * Created by Harry Chou at 2019/4/28.
  */
-class ListNode {
-    int val;
-    ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class MergeListNode {
     public ListNode merge(ListNode list1, ListNode list2) {
@@ -20,10 +17,10 @@ public class MergeListNode {
         }
 
         if (list1.val >= list2.val) {
-            list2.next = Merge(list1, list2.next);
+            list2.next = merge(list1, list2.next);
             return list2;
         } else {
-            list1.next = Merge(list1.next, list2);
+            list1.next = merge(list1.next, list2);
             return list1;
         }
     }

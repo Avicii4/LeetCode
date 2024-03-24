@@ -7,6 +7,7 @@ class Solution:
         return self.process(root)[0]
 
     def process(self, node):
+        # 所有节点返回三个信息，以其为根的子树是否为BST，最大值，最小值
         if not node:
             return True, None, None
 
@@ -30,13 +31,33 @@ class Solution:
             if right_info[2] is not None and right_info[2] <= node.val:
                 is_bst = False
         else:
-            is_bst=False
+            is_bst = False
 
         return is_bst, max_val, min_val
+
+    def isValidBST_2(self, root: Optional[TreeNode]) -> bool:
+
+        def valid(node, left, right):
+            """
+            递归检查是否是BST
+            :param node: 当前节点
+            :param left: 当前节点应该大于这个值
+            :param right: 当前节点应该小于这个值
+            :return:
+            """
+            if not node:
+                return True
+            if not (left < node.val < right):
+                return False
+
+            return (valid(node.left, left, node.val) and
+                    valid(node.right, node.val, right))
+
+        return valid(root, float('-inf'), float('inf'))
 
 
 if __name__ == '__main__':
     n1 = TreeNode(1)
     n1.left = TreeNode(0)
-    n1.right=TreeNode(0)
+    n1.right = TreeNode(0)
     print(Solution().isValidBST(n1))

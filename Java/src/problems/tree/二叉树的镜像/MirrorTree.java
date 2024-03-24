@@ -10,6 +10,8 @@
  * }
  */
 
+import problems.util.TreeNode;
+
 import java.util.Stack;
 
 public class MirrorTree {
@@ -49,10 +51,10 @@ public class MirrorTree {
         root.right = tmpNode;
 
         if (root.left != null) {
-            Mirror(root.left);
+            mirror_2(root.left);
         }
         if (root.right != null) {
-            Mirror(root.right);
+            mirror_2(root.right);
         }
     }
 }

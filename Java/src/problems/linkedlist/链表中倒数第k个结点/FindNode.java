@@ -1,14 +1,10 @@
+package problems.linkedlist.链表中倒数第k个结点;
+
+import problems.util.ListNode;
+
 /**
  * Created by Harry Chou at 2019/4/28.
  */
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class FindNode {
     public ListNode FindKthToTail(ListNode head, int k) {

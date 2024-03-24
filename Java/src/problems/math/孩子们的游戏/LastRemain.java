@@ -1,3 +1,8 @@
+package problems.math.孩子们的游戏;
+
+
+import java.util.LinkedList;
+
 /**
  * Created by Harry Chou at 2019/7/4.
  */

@@ -9,6 +9,6 @@ public class JumpFloor {
         if (target == 2) {
             return 2;
         }
-        return JumpFloor(target - 1) + JumpFloor(target - 2);
+        return JumpFloorCounter(target - 1) + JumpFloorCounter(target - 2);
     }
 }

@@ -1,3 +1,7 @@
+package problems.array.和为S的连续正数序列;
+
+import java.util.ArrayList;
+
 /**
  * Created by Harry Chou at 2019/6/16.
  */

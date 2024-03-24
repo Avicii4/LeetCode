@@ -1,9 +1,8 @@
 /**
  * Created by Harry Chou at 2019/4/15.
  */
-import java.util.ArrayList;
 
-public class MinNumber {
+public class MinNumbers {
     public int minNumberInRotateArray(int[] array) {
         int low = 0;
         int high = array.length - 1;

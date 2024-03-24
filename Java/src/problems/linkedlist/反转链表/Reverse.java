@@ -1,14 +1,10 @@
+package problems.linkedlist.反转链表;
+
+import problems.util.ListNode;
+
 /**
  * Created by Harry Chou at 2019/4/28.
  */
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class Reverse {
     public ListNode ReverseList(ListNode head) {

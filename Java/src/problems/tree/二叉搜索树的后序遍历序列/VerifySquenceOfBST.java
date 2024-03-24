@@ -1,4 +1,4 @@
-
+package problems.tree.二叉搜索树的后序遍历序列;
 /**
  * Created by Harry Chou at 2019/5/17.
  * 
@@ -10,11 +10,10 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class VerifySequenceOfBST {
+public class VerifySquenceOfBST {
     public boolean verifySequence(int[] sequence) {
         if (sequence.length == 0) {
             return false;

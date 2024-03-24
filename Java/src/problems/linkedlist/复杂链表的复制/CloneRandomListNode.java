@@ -1,18 +1,30 @@
-
+package problems.linkedlist.复杂链表的复制;
 /**
  * Created by Harry Chou at 2019/5/21.
  * Defination of random list node:
  * public class RandomListNode {
- *   int label;
- *   RandomListNode next = null;
- *   RandomListNode random = null;
- *
- *   RandomListNode(int label) {
- *       this.label = label;
- *   }
+ * int label;
+ * RandomListNode next = null;
+ * RandomListNode random = null;
+ * <p>
+ * RandomListNode(int label) {
+ * this.label = label;
+ * }
  * }
  */
+
 import java.util.HashMap;
+
+class RandomListNode {
+    int label;
+    RandomListNode next = null;
+    RandomListNode random = null;
+
+    RandomListNode(int label) {
+        this.label = label;
+    }
+}
+
 
 public class CloneRandomListNode {
     public RandomListNode clone(RandomListNode pHead) {

@@ -1,18 +1,10 @@
-
+package problems.tree.二叉搜索树与双向链表;
 /**
  * Created by Harry Chou at 2019/5/22.
  */
 import java.util.Stack;
 
-class TreeNode {
-    int val = 0;
-    TreeNode left = null;
-    TreeNode right = null;
-
-    public TreeNode(int val) {
-        this.val = val;
-    }
-}
+import problems.util.TreeNode;
 
 public class ConvertTreeNode {
     public TreeNode convert(TreeNode pRootOfTree) {

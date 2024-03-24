@@ -1,3 +1,5 @@
+package problems.math.剪绳子;
+
 /**
  * Created by Harry Chou at 2019/9/15.
  */
