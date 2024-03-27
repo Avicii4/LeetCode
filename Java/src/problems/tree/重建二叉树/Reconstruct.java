@@ -1,3 +1,4 @@
+package problems.tree.重建二叉树;
 /**
  * Created by Harry Chou at 2019/4/15.
  * 
@@ -9,7 +10,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-import java.util.Arrays;
+
+import problems.util.TreeNode;
 
 public class Reconstruct {
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {

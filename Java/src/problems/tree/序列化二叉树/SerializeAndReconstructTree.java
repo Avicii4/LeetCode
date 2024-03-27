@@ -1,6 +1,9 @@
+package problems.tree.序列化二叉树;
 /**
  * Created by Harry Chou at 2019/7/22.
  */
+import problems.util.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -29,7 +32,7 @@ public class SerializeAndReconstructTree {
 		if ("#".equals(val)) {
 			return null;
 		}
-		TreeNode node = new TreeNode(Integer.valueOf(val));
+		TreeNode node = new TreeNode(Integer.parseInt(val));
 		node.left = reconstruct(queue);
 		node.right = reconstruct(queue);
 		return node;

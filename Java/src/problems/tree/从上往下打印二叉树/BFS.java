@@ -1,14 +1,17 @@
+package problems.tree.从上往下打印二叉树;
 /**
  * Created by Harry Chou at 2019/5/17.
- * 
+ * <p>
  * Definition for binary tree
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
+
+import problems.util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Queue;
