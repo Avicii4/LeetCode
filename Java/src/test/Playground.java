@@ -37,13 +37,8 @@ public class Playground {
         // 使用
         //useF(Playground::f);
 
-        Queue<Integer> q = new PriorityQueue<>();
-        q.add(3);
-        q.add(1);
-        q.add(2);
-        while (!q.isEmpty()) {
-            System.out.println(q.poll());
-        }
-
+        String str="hahahahah";
+        String newStr= str.replace("ah","xxx");
+        System.out.println(newStr);
     }
 }

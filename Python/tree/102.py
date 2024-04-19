@@ -3,6 +3,7 @@ from typing import Optional, List
 
 
 class Solution:
+    @classmethod
     def levelOrder_1(self, root: Optional[TreeNode]) -> List[List[int]]:
         res = []
         if not root:
@@ -28,6 +29,7 @@ class Solution:
 
         return res
 
+    @classmethod
     def levelOrder_2(self, root: Optional[TreeNode]) -> List[List[int]]:
         res = []
         queue = [root]
@@ -41,10 +43,11 @@ class Solution:
                     queue.append(pop_node.left)
                     queue.append(pop_node.right)
             res.append(cur_level)
+        return res
 
 
 if __name__ == '__main__':
     root = TreeNode(1)
     root.left = TreeNode(2, TreeNode(4), TreeNode(5))
     root.right = TreeNode(3, TreeNode(6), TreeNode(7))
-    print(Solution().levelOrder(root))
+    print(Solution.levelOrder_2(root))
