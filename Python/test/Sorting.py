@@ -107,8 +107,6 @@ def merge_sort_iter(nums: List[int]):
 """
 快速排序
 """
-
-
 def quick_sort(nums: List[int]):
     if nums is None or len(nums) < 2:
         return

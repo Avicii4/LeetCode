@@ -9,13 +9,13 @@ public class HeapSort {
         for (int i = arr.length - 1; i >= 0; i--) {
             heapify(arr, i, arr.length);
         }
-        int heapSize= arr.length;
+        int heapSize = arr.length;
         // 交换堆顶（数组中最大值）到最后一个位置上去
         // 此时最后一个位置的值已经确定了
-        swap(arr,0,--heapSize);
-        while (heapSize>0){
-            heapify(arr,0,heapSize);
-            swap(arr,0,--heapSize);
+        swap(arr, 0, --heapSize);
+        while (heapSize > 0) {
+            heapify(arr, 0, heapSize);
+            swap(arr, 0, --heapSize);
         }
     }
 

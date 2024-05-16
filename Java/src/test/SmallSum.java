@@ -49,7 +49,7 @@ public class SmallSum {
     }
 
     public static void main(String[] args) {
-        int[] nums={1,3,4,2,5};
+        int[] nums = {1, 3, 4, 2, 5};
         System.out.println(smallSum(nums));
     }
 
