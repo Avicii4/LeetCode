@@ -178,10 +178,7 @@ public class BasicBinaryTree {
                 curLevelEnd = nextLevelEnd;
                 curLevelNode = 0;
             }
-
         }
         return maxWidth;
     }
-
-
 }
