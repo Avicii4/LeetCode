@@ -1,4 +1,4 @@
-package test.dp;
+package structure.dp;
 
 public class KnapSack {
 

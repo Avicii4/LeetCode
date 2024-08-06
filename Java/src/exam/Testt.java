@@ -2,10 +2,9 @@ package exam;
 
 // 快速
 
-import test.sort.QuickSort;
-import test.sort.SortingValidator;
+import structure.sort.QuickSort;
+import structure.sort.SortingValidator;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Testt {

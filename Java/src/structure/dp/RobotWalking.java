@@ -1,4 +1,4 @@
-package test.dp;
+package structure.dp;
 
 import java.util.Arrays;
 import java.util.Random;

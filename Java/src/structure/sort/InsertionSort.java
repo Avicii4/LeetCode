@@ -1,4 +1,4 @@
-package test.sort;
+package structure.sort;
 
 public class InsertionSort {
     public static void insertionSort(int[] arr) {

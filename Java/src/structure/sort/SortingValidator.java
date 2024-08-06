@@ -1,4 +1,4 @@
-package test.sort;
+package structure.sort;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package test.sort;
+package structure.sort;
 
 public class HeapSort {
     public static void heapSort(int[] arr) {

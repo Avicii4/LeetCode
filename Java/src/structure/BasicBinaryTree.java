@@ -1,4 +1,4 @@
-package test;
+package structure;
 
 import problems.util.TreeNode;
 

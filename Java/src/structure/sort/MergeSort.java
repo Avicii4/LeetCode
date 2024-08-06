@@ -1,4 +1,4 @@
-package test.sort;
+package structure.sort;
 
 public class MergeSort {
 
@@ -72,7 +72,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        //Validator.validate(MergeSort::mergeSortRecursive);
+        SortingValidator.validate(MergeSort::mergeSortRecursive);
         SortingValidator.validate(MergeSort::mergerSortUnrecursive);
     }
 

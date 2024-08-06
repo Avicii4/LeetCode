@@ -1,4 +1,4 @@
-package test;
+package structure;
 
 public class ReversedPairs {
     public static int reversedPair(int[] arr) {

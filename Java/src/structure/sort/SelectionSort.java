@@ -1,4 +1,4 @@
-package test.sort;
+package structure.sort;
 
 public class SelectionSort {
     public static void selectionSort(int[] arr) {

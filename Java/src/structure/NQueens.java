@@ -1,4 +1,4 @@
-package test;
+package structure;
 
 public class NQueens {
     public static int solveNQueens(int n) {
@@ -43,7 +43,6 @@ public class NQueens {
             // candidate :
             // 0 0 0 0 0 0
             // 5 4 3 2 1 0
-
             mostRightOne = candidate & (~candidate + 1);
             candidate -= mostRightOne; // 去掉目前最右侧的1，供下一次循环尝试
             ans += fastProcess(limit,
