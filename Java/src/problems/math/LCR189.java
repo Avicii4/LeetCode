@@ -1,5 +1,6 @@
 package problems.math;
 
+// 不用条件判断、循环等计算1~n求和
 public class LCR189 {
     int res = 0;
 
