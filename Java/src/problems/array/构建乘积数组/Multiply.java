@@ -1,3 +1,5 @@
+package problems.array.构建乘积数组;
+
 /**
  * Created by Harry Chou at 2019/7/7.
  */

@@ -80,8 +80,8 @@ public class TrieTree {
         for (String s : strings) {
             trieTree.insert(s);
         }
-        System.out.println(trieTree.search("aew"));
-        //System.out.println(trieTree.prefixNum("ab"));
+        System.out.println(trieTree.search("aaa"));
+        System.out.println(trieTree.prefixNum("ab"));
     }
 
 }

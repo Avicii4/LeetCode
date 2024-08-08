@@ -1,4 +1,4 @@
-
+package problems.array.把数组排成最小的数;
 /**
  * Created by Harry Chou at 2019/6/2.
  */

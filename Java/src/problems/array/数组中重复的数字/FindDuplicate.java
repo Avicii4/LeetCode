@@ -1,3 +1,5 @@
+package problems.array.数组中重复的数字;
+
 /**
  * Created by Harry Chou at 2019/7/7.
  */
