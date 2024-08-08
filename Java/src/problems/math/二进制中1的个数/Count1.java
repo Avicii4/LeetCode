@@ -1,3 +1,5 @@
+package problems.math.二进制中1的个数;
+
 /**
  * Created by Harry Chou at 2019/4/25.
  */

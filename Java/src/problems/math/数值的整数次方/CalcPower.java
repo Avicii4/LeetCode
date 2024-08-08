@@ -1,3 +1,5 @@
+package problems.math.数值的整数次方;
+
 /**
  * Created by Harry Chou at 2019/4/27.
  */

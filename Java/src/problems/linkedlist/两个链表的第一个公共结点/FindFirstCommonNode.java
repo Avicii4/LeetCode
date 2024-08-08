@@ -1,3 +1,5 @@
+package problems.linkedlist.两个链表的第一个公共结点;
+
 /**
  * Created by Harry Chou at 2019/6/10.
  */

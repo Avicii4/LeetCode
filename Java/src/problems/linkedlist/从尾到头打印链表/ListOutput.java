@@ -1,3 +1,5 @@
+package problems.linkedlist.从尾到头打印链表;
+
 /**
  * Created by Harry Chou at 2019/4/15.
  * 
@@ -11,6 +13,8 @@
  *    }
  *
  */
+
+import problems.util.ListNode;
 
 import java.util.ArrayList;
 

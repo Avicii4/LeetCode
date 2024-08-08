@@ -1,3 +1,7 @@
+package problems.linkedlist.删除链表中重复的结点;
+
+import problems.util.ListNode;
+
 /**
  * Created by Harry Chou at 2019/7/18.
  */

@@ -1,3 +1,5 @@
+package problems.math.扑克牌顺子;
+
 /**
  * Created by Harry Chou at 2019/7/1.
  */
@@ -18,8 +20,8 @@ public class ContinuousCards {
             if (arr[numbers[i]] > 1) {
                 return false;
             }
-            max = numbers[i] > max ? numbers[i] : max;
-            min = numbers[i] < min ? numbers[i] : min;
+            max = Math.max(numbers[i], max);
+            min = Math.min(numbers[i], min);
         }
         return max - min < 5;
     }

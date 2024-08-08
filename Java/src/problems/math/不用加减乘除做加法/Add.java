@@ -1,3 +1,5 @@
+package problems.math.不用加减乘除做加法;
+
 /**
  * Created by Harry Chou at 2019/7/5.
  */
