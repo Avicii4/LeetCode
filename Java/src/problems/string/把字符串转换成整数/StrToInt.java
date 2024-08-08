@@ -1,3 +1,5 @@
+package problems.string.把字符串转换成整数;
+
 /**
  * Created by Harry Chou at 2019/7/6.
  */

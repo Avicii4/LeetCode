@@ -10,8 +10,6 @@ package problems.tree.二叉搜索树的后序遍历序列;
  *     TreeNode(int x) { val = x; }
  * }
  */
-import java.util.ArrayList;
-import java.util.List;
 
 public class VerifySquenceOfBST {
     public boolean verifySequence(int[] sequence) {
