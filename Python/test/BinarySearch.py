@@ -78,6 +78,6 @@ if __name__ == '__main__':
                 exit('测试失败！')
         else:
             print('测试通过！')
-    except(Exception):
+    except Exception:
         print(n)
         print(res)

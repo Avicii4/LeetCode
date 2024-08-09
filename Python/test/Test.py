@@ -184,7 +184,33 @@ def min_dictionary_order(strs):
     return "".join(strs)
 
 
+# 求全排列
+def all_combinations(s):
+    result = []
+    visited = [False] * len(s)
+
+    def generate_permutations(s, cur_seq):
+        if len(cur_seq) == len(s):
+            result.append(cur_seq)
+            return
+        for i in range(len(s)):
+            if not visited[i]:
+                visited[i] = True
+                generate_permutations(s, cur_seq + s[i])
+                visited[i] = False
+
+    generate_permutations(s, '')
+    return result
+
+
+
+
 if __name__ == '__main__':
+    print(all_combinations('234'))
+
+
+
+    """
     min_dictionary_order(['b', 'c', 'a'])
     # 排序正确性测试
     for _ in range(100):
@@ -198,6 +224,7 @@ if __name__ == '__main__':
             break
     else:
         print('Success!')
+    """
 
     # bubble flag 测试： 至少对于Python来说，这种优化没有效果，if判断还平添时间成本
     # array = [random.randint(-100000, 100000) for _ in range(10000)]

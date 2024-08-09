@@ -4,6 +4,7 @@ from typing import List
 求数组中逆序对的个数
 """
 
+
 class Solution:
     def reversePairs(self, record: List[int]) -> int:
         if len(record) < 2:
@@ -20,12 +21,12 @@ class Solution:
 
     def merge_both(self, record, left, mid, right):
         help = [0 for _ in range(right - left + 1)]
-        p, q = left, mid+1
+        p, q = left, mid + 1
         cur = 0
         reverse_pair = 0
         while p <= mid and q <= right:
             if record[p] > record[q]:
-                reverse_pair += (right - q + 1) # 右边总共有right-q+1个数比record[p]小
+                reverse_pair += (right - q + 1)  # 右边总共有right-q+1个数比record[p]小
                 help[cur] = record[p]
                 cur += 1
                 p += 1
