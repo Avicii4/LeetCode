@@ -1,21 +1,21 @@
-package problems.tree.二叉树的深度;
+package problems.tree;
+
+import problems.util.TreeNode;
 
 import java.util.LinkedList;
 
-/**
- * Created by Harry Chou at 2019/6/12.
- */
-public class TreeDepth {
-    public int getDepth(TreeNode root) {
+public class LC104 {
+    // 二叉树最大高度，递归
+    public static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        int left = getDepth(root.left);
-        int right = getDepth(root.right);
-        return Math.max(left, right) + 1;
+        int leftDepth = maxDepth(root.left);
+        int rightDepth = maxDepth(root.right);
+        return Math.max(leftDepth, rightDepth) + 1;
     }
 
-    public int getDepthWithoutRecur(TreeNode root) {
+    public static int getDepthWithoutRecur(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -48,14 +48,12 @@ public class TreeDepth {
         }
         return level;
     }
-}
 
-class TreeNode {
-    int val = 0;
-    TreeNode left = null;
-    TreeNode right = null;
-
-    public TreeNode(int val) {
-        this.val = val;
+    public static void main(String[] args) {
+        Integer[] a = {1, 2, 3, 4, null, null, 7, 8};
+        TreeNode root = TreeNode.buildTree(a);
+        System.out.println(maxDepth(root));
+        System.out.println(getDepthWithoutRecur(root));
     }
+
 }

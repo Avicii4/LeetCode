@@ -17,17 +17,18 @@ public class LC112 {
         if (node.left == null && node.right == null) {
             return curSum == targetSum;
         }
-        // 递归处理左子树和右子树
+        // 递归处理左子树
         if (node.left != null && process(node.left, curSum, targetSum)) {
             return true;
         }
+        // 递归处理右子树
         if (node.right != null && process(node.right, curSum, targetSum)) {
             return true;
         }
         return false;
     }
 
-
+    // 方法一样，但是写法精炼一点
     public boolean hasPathSum_2(TreeNode root, int targetSum) {
         // 如果根节点为空，直接返回false
         if (root == null) return false;

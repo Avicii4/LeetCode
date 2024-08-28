@@ -5,7 +5,7 @@ import problems.util.TreeNode;
 import java.util.*;
 
 public class LC113 {
-    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+    public static List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
             return res;
@@ -15,8 +15,8 @@ public class LC113 {
         return res;
     }
 
-    private void process(TreeNode node, List<List<Integer>> res,
-                         List<Integer> curList, int targetSum) {
+    private static void process(TreeNode node, List<List<Integer>> res,
+                                List<Integer> curList, int targetSum) {
         targetSum -= node.val;
         curList.add(node.val);
         if (node.left == null && node.right == null && targetSum == 0) {
@@ -28,6 +28,7 @@ public class LC113 {
         if (node.right != null) {
             process(node.right, res, curList, targetSum);
         }
+        // 回溯，从列表中移除掉最后一个元素
         removeLastOccurrence(curList, node.val);
     }
 
@@ -41,17 +42,17 @@ public class LC113 {
     }
 
     /**
-     * 解法二，其实和我原来的算法一样，只是用了队列的结构，代码精简了
+     * 解法二，其实和我原来的算法一样，但是上面的回溯移除元素比较麻烦，
+     * 所以采用队列的结构，代码精简了
      */
-    public List<List<Integer>> pathSum_2(TreeNode root, int targetSum) {
+    public static List<List<Integer>> pathSum_2(TreeNode root, int targetSum) {
         List<List<Integer>> ret = new LinkedList<>();
         Deque<Integer> path = new LinkedList<>();
-        dfs(root, ret,path,targetSum);
+        dfs(root, ret, path, targetSum);
         return ret;
     }
 
-
-    private void dfs(TreeNode root, List<List<Integer>> ret, Deque<Integer> path, int targetSum) {
+    private static void dfs(TreeNode root, List<List<Integer>> ret, Deque<Integer> path, int targetSum) {
         if (root == null) {
             return;
         }
@@ -64,35 +65,17 @@ public class LC113 {
         dfs(root.left, ret, path, targetSum);
         dfs(root.right, ret, path, targetSum);
         path.pollLast();
-
     }
 
 
     public static void main(String[] args) {
-        LC113 l = new LC113();
-
-        Integer[] values = new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1};
-        //Integer[] values = new Integer[]{1, -2, -3, 1, 3, -2, null, -1};
-        Queue<TreeNode> queue = new LinkedList<>();
-        TreeNode root = new TreeNode(values[0]);
-        queue.offer(root);
-
-        for (int i = 1; i < values.length; i += 2) {
-            TreeNode parent = queue.poll();
-            if (parent != null) {
-                if (values[i] != null) {
-                    parent.left = new TreeNode(values[i]);
-                    queue.offer(parent.left);
-                }
-                if (i + 1 < values.length && values[i + 1] != null) {
-                    parent.right = new TreeNode(values[i + 1]);
-                    queue.offer(parent.right);
-                }
-            }
-        }
-
-        System.out.println(l.pathSum_2(root, 22));
-
+        //Integer[] values = new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1};
+        Integer[] values = new Integer[]{1, -2, -3, 1, 3, -2, null, -1};
+        TreeNode root = TreeNode.buildTree(values);
+        //int target = 22;
+        int target=0;
+        System.out.println(pathSum(root, target));
+        System.out.println(pathSum_2(root, target));
     }
 
 }

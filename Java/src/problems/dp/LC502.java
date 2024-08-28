@@ -3,8 +3,8 @@ package problems.dp;
 
 import java.util.*;
 
-public class lc502 {
-    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+public class LC502 {
+    public static int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         int n = profits.length;
         // 根据成本建立小根堆
         PriorityQueue<int[]> minCost = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
@@ -21,8 +21,15 @@ public class lc502 {
             if (maxProfit.isEmpty()) {
                 return w;
             }
-            w += maxProfit.poll()[1]; // 直接获得最大利润项目的利润
+            w += maxProfit.poll()[1]; // 直接做利润最大的项目，并获得其利润
         }
         return w;
+    }
+
+    public static void main(String[] args) {
+        int k = 2, w = 0;
+        int[] capital = new int[]{0, 1, 1};
+        int[] profits = new int[]{1, 2, 3};
+        System.out.println(findMaximizedCapital(k, w, profits, capital));  // 4
     }
 }

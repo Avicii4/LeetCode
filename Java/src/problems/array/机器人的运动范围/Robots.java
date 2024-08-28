@@ -1,3 +1,5 @@
+package problems.array.机器人的运动范围;
+
 /**
  * Created by Harry Chou at 2019/7/23.
  */
