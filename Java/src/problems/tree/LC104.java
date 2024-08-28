@@ -20,7 +20,7 @@ public class LC104 {
             return 0;
         }
 
-        TreeNode current = null;
+        TreeNode current;
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         int cur, last;
