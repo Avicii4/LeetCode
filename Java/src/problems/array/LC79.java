@@ -8,11 +8,12 @@ public class LC79 {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 if (board[i][j] == word.charAt(0)) {
-                    visited[i][j]=true;
+                    visited[i][j] = true;
                     boolean a = dfs(i, j, 0, visited, board, row, col, word, directions);
                     if (a) {
                         return true;
                     }
+                    visited[i][j] = false;
                 }
             }
         }
@@ -34,7 +35,7 @@ public class LC79 {
                     if (ans) {
                         return true;
                     }
-                    visited[newX][newX] = false;
+                    visited[newX][newY] = false;
                 }
             }
         }
@@ -44,8 +45,8 @@ public class LC79 {
     public static void main(String[] args) {
         //char[][] arr = {{'A', 'B', 'C', 'E' }, {'S', 'F', 'C', 'S' }, {'A', 'D', 'E', 'E' }};
         //String word = "ABCCED";
-        char[][] arr = {{'a','a'}};
-        String word = "aaa";
+        char[][] arr = {{'A', 'B', 'C','E'}, {'S', 'F', 'E','S'}, {'A', 'D', 'E','E'}};
+        String word = "ABCESEEEFS";
         System.out.println(exist(arr, word));
     }
 }
