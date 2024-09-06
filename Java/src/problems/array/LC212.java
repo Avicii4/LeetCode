@@ -66,6 +66,12 @@ class Trie {
         }
         cur.word = word;  // 和常规的前缀树不同，如果本节点是某个单词结尾，会记录这个单词
     }
+
+    public static void main(String[] args) {
+        char[][] arr = {{'o', 'a', 'a', 'n'}, {'e', 't', 'a', 'e'}, {'i', 'h', 'k', 'r'}, {'i', 'f', 'l', 'v'}};
+        String[] words = {"oath", "pea", "eat", "rain"};
+        System.out.println(new LC212().findWords(arr, words));
+    }
 }
 
 
