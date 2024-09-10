@@ -16,6 +16,7 @@ public class UnionFindSet<V> {
     public HashMap<MyNode<V>, Integer> sizeMap;
 
     public UnionFindSet(List<V> values) {
+        // 初始化时，所有节点自成一个集合
         for (V val : values) {
             MyNode<V> node = new MyNode<>(val);
             nodes.put(val, node);
