@@ -41,10 +41,9 @@ class Heap:
     def heapify(self, index):
         lchild_idx = 2 * index + 1
         while lchild_idx < self.heap_size:
+            larger_idx = lchild_idx
             if lchild_idx + 1 < self.heap_size and self.heap[lchild_idx] < self.heap[lchild_idx + 1]:
                 larger_idx = lchild_idx + 1
-            else:
-                larger_idx = lchild_idx
             larger_idx = larger_idx if self.heap[larger_idx] > self.heap[index] else index
             if larger_idx == index:
                 break
