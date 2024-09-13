@@ -65,7 +65,7 @@ public class UnionFindSet<V> {
             cur = parentMap.get(cur);
         }
         // 沿途节点全部优化
-        while (!parentMap.isEmpty()) {
+        while (!path.isEmpty()) {
             parentMap.put(path.pop(), cur);
         }
         return cur;
