@@ -84,13 +84,10 @@ public class LFUCache {
         lfu.get(2);
         lfu.get(3);
         lfu.put(4, 4);
-        //System.out.println(lfu.listMap.get(1).map);
-        lfu.get(1);  // TODO
+        lfu.get(1);
         lfu.get(3);
         lfu.get(4);
-
     }
-
 }
 
 

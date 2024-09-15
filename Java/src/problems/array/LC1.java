@@ -1,5 +1,6 @@
-package problems.array.lc1;
+package problems.array;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,8 +9,8 @@ import java.util.Map;
  * Description: Given an array of integers, return indices of the two numbers
  * such that they add up to a specific target.
  */
-public class TwoSum {
-    public int[] findTwoSum(int[] nums, int target) {
+public class LC1 {
+    public static int[] findTwoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++)
             for (int j = i + 1; j < nums.length; j++)
@@ -21,7 +22,9 @@ public class TwoSum {
         return result;
     }
 
-    public int[] twoSum(int[] nums, int target) {
+    // 使用 HashMap 一次遍历，在插入该数前先去 HashMap 中查找有没有另外一个数，
+    // 若有就可以直接返回了；若没有再插入，继续迭代。
+    public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int anotherNum = target - nums[i];
@@ -32,5 +35,12 @@ public class TwoSum {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {2, 0, 9, 10, 11};
+        int target = 11;
+        System.out.println(Arrays.toString(twoSum(arr, target)));
+
     }
 }
