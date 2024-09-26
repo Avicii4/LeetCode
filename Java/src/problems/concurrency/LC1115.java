@@ -38,7 +38,7 @@ public class LC1115 {
 
 
 class FooBar {
-    private int n;
+    private final int n;
     private Semaphore fooSema = new Semaphore(1);
     private Semaphore barSema = new Semaphore(0);
 
