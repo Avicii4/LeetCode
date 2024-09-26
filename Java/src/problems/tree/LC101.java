@@ -1,4 +1,4 @@
-package problems.tree.lc101;
+package problems.tree;
 
 import problems.util.TreeNode;
 
@@ -14,16 +14,15 @@ import problems.util.TreeNode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class SymmetricTree {
-    public boolean isSymmetric(TreeNode root) {
+public class LC101 {
+    public static boolean isSymmetric(TreeNode root) {
         if (root == null) {
             return true;
-        } else {
-            return isNodeSymmetric(root.left, root.right);
         }
+        return isNodeSymmetric(root.left, root.right);
     }
 
-    public boolean isNodeSymmetric(TreeNode p, TreeNode q) {
+    public static boolean isNodeSymmetric(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
         } else if (p == null || q == null) {
@@ -31,5 +30,11 @@ public class SymmetricTree {
         } else {
             return (p.val == q.val) && isNodeSymmetric(p.left, q.right) && isNodeSymmetric(p.right, q.left);
         }
+    }
+
+    public static void main(String[] args) {
+        Integer[] arr = {1, 2, 2, 3, 4, 4, 3};
+        TreeNode root = TreeNode.buildTree(arr);
+        System.out.println(isSymmetric(root));
     }
 }
