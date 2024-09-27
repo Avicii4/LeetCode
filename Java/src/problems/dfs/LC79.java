@@ -1,4 +1,4 @@
-package problems.array;
+package problems.dfs;
 
 public class LC79 {
     public static boolean exist(char[][] board, String word) {

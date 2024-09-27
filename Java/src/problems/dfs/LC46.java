@@ -1,4 +1,4 @@
-package problems.array;
+package problems.dfs;
 
 import java.util.ArrayList;
 import java.util.Collections;
