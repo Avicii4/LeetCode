@@ -10,16 +10,12 @@ public class LC42 {
         int res = 0;
         while (l <= r) {
             if (mLeft <= mRight) {
-                if (mLeft - height[l] > 0) {
-                    res += mLeft - height[l];
-                }
                 mLeft = Math.max(mLeft, height[l]);
+                res += mLeft - height[l];
                 l++;
             } else {
-                if (mRight - height[r] > 0) {
-                    res += mRight - height[r];
-                }
                 mRight = Math.max(mRight, height[r]);
+                res += mRight - height[r];
                 r--;
             }
         }
