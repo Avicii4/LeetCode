@@ -31,7 +31,7 @@ public class LC53 {
     }
 
     public static int maxSubArrayDPSimple(int[] nums) {
-        // 因为上面的dp法中的i位置指依赖i-1位置，所以dp数组换成一个变量pre即可
+        // 因为上面的dp法中的i位置只依赖i-1位置，所以dp数组换成一个变量pre即可
         int n = nums.length;
         int pre = nums[0];
         int res = nums[0];
