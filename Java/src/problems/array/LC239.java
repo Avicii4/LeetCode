@@ -2,10 +2,11 @@ package problems.array;
 
 import java.util.*;
 
+// 滑动窗口向右移动，每次都输出数组中得最大值
 public class LC239 {
     public static int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
-        // 队列存下标，且保证下标对应数组中的值是递减的
+        // 单调队列，队列存下标，且保证下标对应数组中的值是递减的
         LinkedList<Integer> queue = new LinkedList<>();
         // 先加入前k个数字
         for (int i = 0; i < k; i++) {

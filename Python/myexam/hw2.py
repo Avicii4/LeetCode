@@ -10,7 +10,7 @@ def func():
         if len(x) == 1 and x[0] == -1:
             continue
         else:
-            depend[i] = [e-1 for e in x]
+            depend[i] = [e - 1 for e in x]
 
     indegree = [0] * N
     graph = defaultdict(list)  # graph[i]记录i是谁的依赖项
