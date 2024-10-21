@@ -29,6 +29,24 @@ public class LC238 {
         return answer;
     }
 
+
+    // 参考问题讨论区 https://www.nowcoder.com/questionTerminal/94a4d381a68b47b7a8bed86f2975db46
+    public int[] multiply(int[] A) {
+        int[] B = new int[A.length];
+        if (B.length != 0) {
+            B[0] = 1;
+            for (int i = 1; i < B.length; i++) {
+                B[i] = B[i - 1] * A[i - 1];
+            }
+            int temp = 1;
+            for (int j = B.length - 1; j > 0; j--) {
+                temp *= A[j];
+                B[j - 1] *= temp;
+            }
+        }
+        return B;
+    }
+
     public static void main(String[] args) {
         int[] a = {1,2};
         System.out.println(Arrays.toString(productExceptSelf(a)));

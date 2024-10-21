@@ -34,8 +34,6 @@ public class LC54 {
             }
             left++;
         }
-
-
         return res;
     }
 
